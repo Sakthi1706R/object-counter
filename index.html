@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count Object Keys</title>
+</head>
+<body>
+  <h1>Object Key Counter</h1>
+  <p id="output"></p>
+
+  <script>
+    // Define an object with some properties
+    const myObject = {
+      name: "John Doe",
+      age: 30,
+      job: "Developer",
+      country: "USA"
+    };
+
+    // Function to count the number of keys/properties in the object
+    function countObjectKeys(obj) {
+      return Object.keys(obj).length;
+    }
+
+    // Count the keys in the object
+    const obj = countObjectKeys(myObject);
+
+    // Display the result on the webpage
+    document.getElementById("output").textContent = 
+      `The object has ${obj} keys/properties.`;
+  </script>
+</body>
+</html>
+
+
